@@ -16,7 +16,7 @@ public class GlobalTime : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(seconds == -1)
+        if(seconds == 0)
         {
             thePlayer.GetComponent<PlayerControls>().enabled = false;
             seconds = 0;
