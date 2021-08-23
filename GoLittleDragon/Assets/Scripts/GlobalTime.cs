@@ -11,13 +11,13 @@ public class GlobalTime : MonoBehaviour
     public bool deductingTime;
     public GameObject timeUptext;
     public GameObject fadeIn;
-    public GameObject thePlayer;
-    private GameObject player;
+    private GameObject thePlayer;
 
     // Update is called once per frame
     void Update()
     {
-        player = GameObject.Find("Player(Clone)");
+        thePlayer = GameObject.Find("Player(Clone)");
+
         if (seconds == 0)
         {
             thePlayer.GetComponent<PlayerControls>().enabled = false;

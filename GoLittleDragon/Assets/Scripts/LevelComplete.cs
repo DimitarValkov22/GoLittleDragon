@@ -9,11 +9,13 @@ public class LevelComplete : MonoBehaviour
 
     public GameObject completedText;
     public GameObject fadeOut;
-    public GameObject thePlayer;
+    private GameObject thePlayer;
 
   
     void Update()
     {
+        thePlayer = GameObject.Find("Player(Clone)");
+
         importedCoins = GlobalCoin.coinCount;
         if(importedCoins == 5)
         {

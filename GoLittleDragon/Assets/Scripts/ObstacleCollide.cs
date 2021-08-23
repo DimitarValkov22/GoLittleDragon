@@ -8,7 +8,12 @@ public class ObstacleCollide : MonoBehaviour
 {
     public GameObject obstacleText;
     public GameObject fadeOut;
-    public GameObject thePlayer;
+    private GameObject thePlayer;
+
+     void Update()
+    {
+        thePlayer = GameObject.Find("Player(Clone)");
+    }
 
     void OnTriggerEnter(Collider other)
     {
@@ -24,6 +29,6 @@ public class ObstacleCollide : MonoBehaviour
     IEnumerator RespawningLevel()
     {
         yield return new WaitForSecondsRealtime(3);
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
 }
