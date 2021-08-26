@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class GlobalTime : MonoBehaviour
 {
     public GameObject timeDisplay;
-    public int seconds = 30;
+    public int seconds = 7000;
     public bool deductingTime;
     public GameObject timeUptext;
     public GameObject fadeIn;
