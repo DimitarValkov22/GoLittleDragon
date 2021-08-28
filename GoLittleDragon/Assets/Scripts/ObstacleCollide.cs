@@ -20,6 +20,7 @@ public class ObstacleCollide : MonoBehaviour
         if(other.tag == "Player")
         {
             thePlayer.GetComponent<PlayerControls>().enabled = false;
+            thePlayer.GetComponentInChildren<Animator>().enabled = false;
             obstacleText.SetActive(true);
             fadeOut.SetActive(true);
             StartCoroutine(RespawningLevel());
