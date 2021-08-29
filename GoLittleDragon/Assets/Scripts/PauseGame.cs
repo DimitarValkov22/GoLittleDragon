@@ -43,12 +43,13 @@ public class PauseGame : MonoBehaviour
     public void RestartLevel()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(GlobalLevel.levelNumber);
     }
 
     public void ExitLevel()
     {
         Time.timeScale = 1;
+        GlobalLevel.levelNumber = 3;
         SceneManager.LoadScene(1);
     }
 }

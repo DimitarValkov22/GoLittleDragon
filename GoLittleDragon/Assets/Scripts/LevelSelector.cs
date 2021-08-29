@@ -8,6 +8,7 @@ public class LevelSelector : MonoBehaviour
 
     void Start()
     {
-        SceneManager.LoadScene(0);
+        GlobalCoin.coinCount = 0;
+        SceneManager.LoadScene(GlobalLevel.levelNumber);
     }
 }
