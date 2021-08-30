@@ -2,10 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
     public int loadLevel;
+    public GameObject hintBox;
+    public int hintNumber;
+
+     void Start()
+    {
+        hintNumber = Random.Range(1, 3);
+        if(hintNumber == 1)
+        {
+            hintBox.GetComponent<Text>().text = "Tips: Collect all coins to complete the level";
+        }
+
+        hintNumber = Random.Range(1, 3);
+        if (hintNumber == 1)
+        {
+            hintBox.GetComponent<Text>().text = "Tips: Dont't let the timer hits zero";
+        }
+
+        hintNumber = Random.Range(1, 3);
+        if (hintNumber == 1)
+        {
+            hintBox.GetComponent<Text>().text = "Tips: Avoid the walls and the dark 'things'";
+        }
+    }
 
     public void StartGame()
     {
@@ -28,7 +52,7 @@ public class MainMenu : MonoBehaviour
 
     public void SelectCharacter()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(6);
     }
 
     public void QuitGame()
