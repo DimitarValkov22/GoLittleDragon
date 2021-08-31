@@ -25,6 +25,7 @@ public class LevelComplete : MonoBehaviour
 
     IEnumerator LevelCompleted()
     {
+        Time.timeScale = 0;
         yield return new WaitForSecondsRealtime(0.2f);
         completedText.SetActive(true);
         fadeOut.SetActive(true);
@@ -33,6 +34,7 @@ public class LevelComplete : MonoBehaviour
         yield return new WaitForSecondsRealtime(3);
         GlobalLevel.levelNumber += 1;
         PlayerPrefs.SetInt("LevelLoadNumber", GlobalLevel.levelNumber);
+        Time.timeScale = 1;
         SceneManager.LoadScene(2);
     }
 }
