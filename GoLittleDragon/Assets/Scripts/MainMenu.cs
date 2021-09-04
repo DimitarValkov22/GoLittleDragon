@@ -10,6 +10,8 @@ public class MainMenu : MonoBehaviour
     public GameObject hintBox;
     public int hintNumber;
 
+    public GameObject optionsMenu;
+
      void Start()
     {
         hintNumber = Random.Range(1, 3);
@@ -29,6 +31,16 @@ public class MainMenu : MonoBehaviour
         {
             hintBox.GetComponent<Text>().text = "Tips: Avoid the walls and the dark 'things'";
         }
+    }
+
+    public void CloseOptionMenu()
+    {
+        optionsMenu.SetActive(false);
+    }
+
+    public void OpenOptionMenu()
+    {
+        optionsMenu.SetActive(true);
     }
 
     public void StartGame()
@@ -52,7 +64,7 @@ public class MainMenu : MonoBehaviour
 
     public void SelectCharacter()
     {
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(13);
     }
 
     public void QuitGame()
