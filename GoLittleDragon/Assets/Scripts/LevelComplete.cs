@@ -19,22 +19,24 @@ public class LevelComplete : MonoBehaviour
         importedCoins = GlobalCoin.coinCount;
         if(importedCoins == 5)
         {
+            fadeOut.SetActive(true);
+            this.GetComponent<GlobalTime>().enabled = false;
             StartCoroutine(LevelCompleted());
         }
     }
 
     IEnumerator LevelCompleted()
     {
+        yield return new WaitForSecondsRealtime(1);
         Time.timeScale = 0;
-        yield return new WaitForSecondsRealtime(0.2f);
         completedText.SetActive(true);
-        fadeOut.SetActive(true);
         thePlayer.GetComponent<PlayerControls>().enabled = false;
         GlobalCoin.coinCount = 0;
         yield return new WaitForSecondsRealtime(3);
         GlobalLevel.levelNumber += 1;
         PlayerPrefs.SetInt("LevelLoadNumber", GlobalLevel.levelNumber);
         Time.timeScale = 1;
+        this.GetComponent<GlobalTime>().enabled = true;
         SceneManager.LoadScene(2);
     }
 }
