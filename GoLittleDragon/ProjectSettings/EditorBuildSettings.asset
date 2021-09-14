@@ -60,6 +60,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Level15.unity
     guid: 44d07866b7c122b43a9c1e00c3e9150f
   - enabled: 1
+    path: Assets/Scenes/Level16.unity
+    guid: 5ba75f6f66bce204e8da04c1e075eca0
+  - enabled: 1
     path: Assets/Scenes/CharacterSelect.unity
     guid: 7f6d15a433d915d45b6ed0dfcb4ea721
   m_configObjects: {}

@@ -7,6 +7,7 @@ public class PauseGame : MonoBehaviour
 {
     public bool gamePaused = false;
     public GameObject pauseMenu;
+    public AudioSource buttonClick;
 
     void Update()
     {
@@ -33,6 +34,7 @@ public class PauseGame : MonoBehaviour
 
     public void UnpauseGame()
     {
+        buttonClick.Play();
         pauseMenu.SetActive(false);
         this.GetComponent<AudioSource>().UnPause();
         Cursor.visible = false;
@@ -42,6 +44,7 @@ public class PauseGame : MonoBehaviour
 
     public void RestartLevel()
     {
+        buttonClick.Play();
         Time.timeScale = 1;
         GlobalCoin.coinCount = 0;
         SceneManager.LoadScene(GlobalLevel.levelNumber);
@@ -49,6 +52,7 @@ public class PauseGame : MonoBehaviour
 
     public void ExitLevel()
     {
+        buttonClick.Play();
         Time.timeScale = 1;
         GlobalLevel.levelNumber = 3;
         SceneManager.LoadScene(1);

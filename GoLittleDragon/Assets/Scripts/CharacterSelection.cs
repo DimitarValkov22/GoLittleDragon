@@ -7,9 +7,11 @@ public class CharacterSelection : MonoBehaviour
 {
     public GameObject[] characters;
     public int selectedCharacter = 0;
+    public AudioSource buttonClick;
 
     public void NextCharacter()
     {
+        buttonClick.Play();
         characters[selectedCharacter].SetActive(false);
         selectedCharacter = (selectedCharacter + 1) % characters.Length;
         characters[selectedCharacter].SetActive(true);
@@ -17,6 +19,7 @@ public class CharacterSelection : MonoBehaviour
 
     public void PreviousCharacter()
     {
+        buttonClick.Play();
         characters[selectedCharacter].SetActive(false);
         selectedCharacter--;
         if(selectedCharacter < 0)
@@ -28,6 +31,7 @@ public class CharacterSelection : MonoBehaviour
 
     public void StartGame()
     {
+        buttonClick.Play();
         PlayerPrefs.SetInt("selectedCharacter", selectedCharacter);
         SceneManager.LoadScene(GlobalLevel.levelNumber);
     }

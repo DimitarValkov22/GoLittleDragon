@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
     public int loadLevel;
     public GameObject hintBox;
     public int hintNumber;
+    public AudioSource buttonClick;
 
     public GameObject optionsMenu;
 
@@ -36,20 +37,24 @@ public class MainMenu : MonoBehaviour
     public void CloseOptionMenu()
     {
         optionsMenu.SetActive(false);
+        buttonClick.Play();
     }
 
     public void OpenOptionMenu()
     {
         optionsMenu.SetActive(true);
+        buttonClick.Play();
     }
 
     public void StartGame()
     {
         SceneManager.LoadScene(GlobalLevel.levelNumber);
+        buttonClick.Play();
     }
 
     public void LoadGame()
     {
+        buttonClick.Play();
         loadLevel = PlayerPrefs.GetInt("LevelLoadNumber");
         if(loadLevel < 3)
         {
@@ -64,11 +69,13 @@ public class MainMenu : MonoBehaviour
 
     public void SelectCharacter()
     {
+        buttonClick.Play();
         SceneManager.LoadScene(13);
     }
 
     public void QuitGame()
     {
+        buttonClick.Play();
         Application.Quit();
     }
 }
