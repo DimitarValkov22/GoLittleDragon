@@ -70,7 +70,7 @@ public class MainMenu : MonoBehaviour
     public void SelectCharacter()
     {
         buttonClick.Play();
-        SceneManager.LoadScene(13);
+        SceneManager.LoadScene(21);
     }
 
     public void QuitGame()
