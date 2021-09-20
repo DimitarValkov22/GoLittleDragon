@@ -189,6 +189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleText: {fileID: 421856862}
   fadeOut: {fileID: 771791435}
+  deathSound: {fileID: 1250663384}
 --- !u!65 &1888485
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1162,6 +1163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleText: {fileID: 421856862}
   fadeOut: {fileID: 771791435}
+  deathSound: {fileID: 1250663384}
 --- !u!65 &89663748
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3273,6 +3275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleText: {fileID: 421856862}
   fadeOut: {fileID: 771791435}
+  deathSound: {fileID: 1250663384}
 --- !u!65 &272750175
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3818,6 +3821,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleText: {fileID: 421856862}
   fadeOut: {fileID: 771791435}
+  deathSound: {fileID: 1250663384}
 --- !u!65 &314453260
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4672,6 +4676,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleText: {fileID: 421856862}
   fadeOut: {fileID: 771791435}
+  deathSound: {fileID: 1250663384}
 --- !u!65 &401907822
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5443,6 +5448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleText: {fileID: 421856862}
   fadeOut: {fileID: 771791435}
+  deathSound: {fileID: 1250663384}
 --- !u!114 &453009432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6007,6 +6013,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleText: {fileID: 421856862}
   fadeOut: {fileID: 771791435}
+  deathSound: {fileID: 1250663384}
 --- !u!65 &536181748
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7228,6 +7235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleText: {fileID: 421856862}
   fadeOut: {fileID: 771791435}
+  deathSound: {fileID: 1250663384}
 --- !u!65 &661081969
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8545,6 +8553,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleText: {fileID: 421856862}
   fadeOut: {fileID: 771791435}
+  deathSound: {fileID: 1250663384}
 --- !u!65 &794659182
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9046,6 +9055,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleText: {fileID: 421856862}
   fadeOut: {fileID: 771791435}
+  deathSound: {fileID: 1250663384}
 --- !u!65 &815758271
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9467,6 +9477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleText: {fileID: 421856862}
   fadeOut: {fileID: 771791435}
+  deathSound: {fileID: 1250663384}
 --- !u!65 &847038394
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9809,6 +9820,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleText: {fileID: 421856862}
   fadeOut: {fileID: 771791435}
+  deathSound: {fileID: 1250663384}
 --- !u!65 &891056887
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11418,6 +11430,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleText: {fileID: 421856862}
   fadeOut: {fileID: 771791435}
+  deathSound: {fileID: 1250663384}
 --- !u!65 &970150410
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12300,6 +12313,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleText: {fileID: 421856862}
   fadeOut: {fileID: 771791435}
+  deathSound: {fileID: 1250663384}
 --- !u!65 &1035294761
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13261,6 +13275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleText: {fileID: 421856862}
   fadeOut: {fileID: 771791435}
+  deathSound: {fileID: 1250663384}
 --- !u!65 &1098478555
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13555,6 +13570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleText: {fileID: 421856862}
   fadeOut: {fileID: 771791435}
+  deathSound: {fileID: 1250663384}
 --- !u!65 &1121410265
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15006,6 +15022,133 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.000001, y: 4, z: 0.19397187}
   m_Center: {x: 0, y: 1.9999999, z: 0.0969851}
+--- !u!1 &1250663384
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1250663386}
+  - component: {fileID: 1250663385}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!82 &1250663385
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250663384}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a7b09d08f2a268946a0315f30e260097, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1250663386
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250663384}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.787075, y: -4.5186644, z: 7.6046605}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1252837510
 GameObject:
   m_ObjectHideFlags: 0
@@ -15935,6 +16078,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleText: {fileID: 421856862}
   fadeOut: {fileID: 771791435}
+  deathSound: {fileID: 1250663384}
 --- !u!65 &1293979275
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15974,6 +16118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleText: {fileID: 421856862}
   fadeOut: {fileID: 771791435}
+  deathSound: {fileID: 1250663384}
 --- !u!65 &1296220839
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16007,6 +16152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleText: {fileID: 421856862}
   fadeOut: {fileID: 771791435}
+  deathSound: {fileID: 1250663384}
 --- !u!114 &1302593513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18794,6 +18940,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleText: {fileID: 421856862}
   fadeOut: {fileID: 771791435}
+  deathSound: {fileID: 1250663384}
 --- !u!65 &1548621912
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19797,6 +19944,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleText: {fileID: 421856862}
   fadeOut: {fileID: 771791435}
+  deathSound: {fileID: 1250663384}
 --- !u!65 &1619031803
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20845,6 +20993,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleText: {fileID: 421856862}
   fadeOut: {fileID: 771791435}
+  deathSound: {fileID: 1250663384}
 --- !u!65 &1709956352
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22581,6 +22730,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleText: {fileID: 421856862}
   fadeOut: {fileID: 771791435}
+  deathSound: {fileID: 1250663384}
 --- !u!65 &1829598627
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23999,6 +24149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleText: {fileID: 421856862}
   fadeOut: {fileID: 771791435}
+  deathSound: {fileID: 1250663384}
 --- !u!114 &1901222697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25012,6 +25163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleText: {fileID: 421856862}
   fadeOut: {fileID: 771791435}
+  deathSound: {fileID: 1250663384}
 --- !u!65 &1976914738
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25051,6 +25203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleText: {fileID: 421856862}
   fadeOut: {fileID: 771791435}
+  deathSound: {fileID: 1250663384}
 --- !u!65 &1982461685
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25368,6 +25521,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleText: {fileID: 421856862}
   fadeOut: {fileID: 771791435}
+  deathSound: {fileID: 1250663384}
 --- !u!65 &1990389046
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25407,6 +25561,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacleText: {fileID: 421856862}
   fadeOut: {fileID: 771791435}
+  deathSound: {fileID: 1250663384}
 --- !u!65 &1990670847
 BoxCollider:
   m_ObjectHideFlags: 0

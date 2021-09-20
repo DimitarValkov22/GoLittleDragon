@@ -4,23 +4,23 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class ObstacleCollide : MonoBehaviour
+public class SphereCollide : MonoBehaviour
 {
     public GameObject obstacleText;
     public GameObject fadeOut;
     private GameObject thePlayer;
     public GameObject deathSound;
 
-     void Update()
+    void Update()
     {
         thePlayer = GameObject.Find("Player(Clone)");
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player")
+        if (other.tag == "Player")
         {
-            this.GetComponent<BoxCollider>().enabled = false;
+            this.GetComponent<SphereCollider>().enabled = false;
             deathSound.SetActive(true);
             thePlayer.GetComponent<PlayerControls>().enabled = false;
             thePlayer.GetComponentInChildren<Animator>().enabled = false;
@@ -32,7 +32,7 @@ public class ObstacleCollide : MonoBehaviour
 
     IEnumerator RespawningLevel()
     {
-       // yield return new WaitForSecondsRealtime(0.1f);
+        // yield return new WaitForSecondsRealtime(0.1f);
         //deathSound.SetActive(false);
         yield return new WaitForSecondsRealtime(3);
         SceneManager.LoadScene(2);
