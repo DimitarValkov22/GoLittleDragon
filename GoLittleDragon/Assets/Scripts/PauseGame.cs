@@ -52,6 +52,7 @@ public class PauseGame : MonoBehaviour
 
     public void ExitLevel()
     {
+        GlobalCoin.coinCount = 0;
         buttonClick.Play();
         Time.timeScale = 1;
         GlobalLevel.levelNumber = 3;

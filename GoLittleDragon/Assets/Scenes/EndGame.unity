@@ -2480,7 +2480,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.027500002, y: 0.098000005}
   m_AnchorMax: {x: 0.23125, y: 0.16466136}
-  m_AnchoredPosition: {x: -0.6900635, y: 0.6800537}
+  m_AnchoredPosition: {x: -0.6901245, y: 0.6800537}
   m_SizeDelta: {x: -3, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1337962236
@@ -2909,6 +2909,7 @@ MonoBehaviour:
   importedCoins: 0
   completedText: {fileID: 437277459}
   fadeOut: {fileID: 437277459}
+  completeSound: {fileID: 0}
 --- !u!114 &1600146377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2936,9 +2937,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f648a2f90c1e9ea4abc04b864ddf1d28, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0a1ffdfac74a7d8419cc5c5f487f1aa8, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.06
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 1
   Mute: 0

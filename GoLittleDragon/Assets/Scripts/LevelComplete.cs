@@ -10,6 +10,7 @@ public class LevelComplete : MonoBehaviour
     public GameObject completedText;
     public GameObject fadeOut;
     private GameObject thePlayer;
+    public AudioSource completeSound;
 
   
     void Update()
@@ -19,6 +20,7 @@ public class LevelComplete : MonoBehaviour
         importedCoins = GlobalCoin.coinCount;
         if(importedCoins == 5)
         {
+            thePlayer.GetComponent<PlayerControls>().enabled = false;
             fadeOut.SetActive(true);
             this.GetComponent<GlobalTime>().enabled = false;
             StartCoroutine(LevelCompleted());
@@ -27,10 +29,10 @@ public class LevelComplete : MonoBehaviour
 
     IEnumerator LevelCompleted()
     {
+        completeSound.Play();
         yield return new WaitForSecondsRealtime(1);
         Time.timeScale = 0;
         completedText.SetActive(true);
-        thePlayer.GetComponent<PlayerControls>().enabled = false;
         GlobalCoin.coinCount = 0;
         yield return new WaitForSecondsRealtime(3);
         GlobalLevel.levelNumber += 1;
